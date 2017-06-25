@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BookWinkel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <style>
+.jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+	  width: 100%;
+	  align: left;
+  }
+  footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ .vertical-line{
+  width: 0px; /* Use only border style */
+  height: 100%;
+  float: left; 
+  border: 1px inset; /* This is default border style for <hr> tag */
+}
+
+  
+   
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html">WebSiteName</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+		
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li> 
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <li><a  data-toggle="modal" href="#xix"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
+	  <li><a href="#xix" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> LogIn </a></li>
+         </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- MODAL -->
+<div id="xix" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- MODAL CONTENT -->
+<!-- Modal content-->
+    <div class="modal-content">
+	<div class="modal-header">
+
+  <ul class="nav nav-tabs nav-justified">
+  <li class="active"><a data-toggle="tab" href="#signup">Sign Up</a></li>
+  <li><a data-toggle="tab" href="#login">Log In</a></li>
+  </ul>
+     </div>
+	 <div class="modal-body">
+	  <div class="tab-content">
+  <div id="signup" class="tab-pane fade in active">
+    <form role="form">
+		<div class="form-group">
+		<input type="text" class="form-control" id="uname" placeholder="Enter Your Name" >
+		</div>
+		<div class="form-group">
+		<input type="email" class="form-control" id="uemail" placeholder=" Enter Your Email">
+		</div>
+		<div class="form-group">
+		<input type="text" class="form-control" id="umob" placeholder="Enter Your Mobile No.">
+		</div>
+		<div class="form-group">
+		<input type="password" class="form-control" id="psw" placeholder="Enter password">
+		</div>
+		<div class="form-group">
+		<input type="password" class="form-control" id="psw" placeholder="Re-Enter password">
+		</div>
+		<div class="checkbox">
+        <label><input type="checkbox" value="" checked>Remember me</label>
+        </div>
+		<button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-thumbs-up"></span> SignUp</button>
+          </form>
+		  <div class="modal-footer">
+          </div>
+  </div>
+  <div id="login" class="tab-pane fade">
+     <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="password" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+		  <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+     
+  </div>
+	</div>
+	
+	
+	</div>
+	
+</div>
+  </div>
+</div>
+   
+ 
+  <div class="jumbotron text-center" >
+
+	<form class="form-inline">
+	<input type="text" class="form-control" size="50" placeholder="Enter Title / Author" />
+	<button type="button" class="btn btn-info">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+	</form>
+ 
+  </div>
+   <div class="container">
+  <div class="btn-group btn-group-justified" >
+	 <a href="gate.html" class="btn btn-primary btn-lg">GATE BOOKS</a>
+	 <a href="jee.html" class="btn btn-primary btn-lg">JEE BOOKS</a>
+  <a href="school.html" class="btn btn-primary active btn-lg">SCHOOL BOOKS</a>
+  <a href="ncert.html" class="btn btn-primary btn-lg">NCERT BOOKS</a>
+  <a href="novel.html" class="btn btn-primary btn-lg">NOVELS</a>
+  
+</div>
+ <br />
+ 
+ <div class="row">
+ <div class="col-md-3">
+ <strong><h3><u> FREE PDF ZONE</u></h3></strong>
+ <hr  width="100%" color="red" size="2" />
+ <br />
+ 
+ 
+ 
+
+ 
+        <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">	ENGINEERING BOOKS</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        
+		<ul class="list-group">
+           <li class="list-group-item">Civil Engineering</li>
+          <li class="list-group-item">Computer Science</li>
+		  <li class="list-group-item">Electrical Engineering</li>
+		  <li class="list-group-item">Electronics & Communication</li>
+		  <li class="list-group-item">Mechanical Engineering</li>
+          
+        </ul></div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">LITERATURE & FICTION</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">Action & Adventure</li>
+          <li class="list-group-item">Classics</li>
+		  <li class="list-group-item">Crime & Thriller</li>
+		  <li class="list-group-item">Love & Romance</li>
+		  <li class="list-group-item">Poetry</li>
+        </ul></div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">NCERT BOOKS</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+       <ul class="list-group">
+          <li class="list-group-item">Class-I </li>
+		  <li class="list-group-item">Class-II </li>
+		  <li class="list-group-item">Class-III</li>
+		  <li class="list-group-item">Class-IV </li>
+           <li class="list-group-item">Class-V </li>
+           <li class="list-group-item">Class-VI </li>
+           <li class="list-group-item">Class-VII</li>
+           <li class="list-group-item">Class-VIII </li>
+           <li class="list-group-item">Class-IX </li>
+           <li class="list-group-item">Class-X </li>
+           <li class="list-group-item">Class-XI </li>
+           <li class="list-group-item">Class-XII </li>
+          
+        </ul>
+      </div>
+    </div>
+
+	<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#">ACADEMICS TEXTBOOKS </a>
+        </h4>
+      </div>
+      
+    </div>
+ 
+
+	<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#">MANAGEMENT TEXTBOOKS </a>
+        </h4>
+      </div>
+      </div>
+    </div>
+
+	<div class="col-md-9">
+  <strong><h3>School TextBooks </h3></strong>
+
+  <hr  width="100%" color="red" size="4" />
+  
+  <div class="row">
+  <div class="col-md-4">
+    <a href="goyal01.html" class="thumbnail">
+    
+      <img src="img/goyal01.jpg" alt="ESSENTIALS OF ENGLISH GRAMMAR AND COMPOSITION" style="width:150px;height:175px">
+	  <center>ENGLISH GRAM. & COMP.<br /> -BY N.K.AGGARWALA <br /><del> ₹ 150</del><h4> ₹ 60 (60% OFF)</h4>
+	  </center>
+	  </img>
+    </a>
+  </div>
+  
+ 
+  
+  <div class="col-md-4">
+  <a href="evergreen01.html" class="thumbnail">
+    
+      <img src="img/evergreen01.jpg" alt="INTERACTIVE MATHEMATICS EVERGREEN PUB." style="width:150px;height:175px">
+	  <center>INTERACTIVE MATHEMATICS <br />EVERGREEN PUB. <br /><del> ₹ 290</del><h4> ₹ 116 (60% OFF)</h4>
+	  </center>
+	  </img>
+    </a>
+  </div>
+
+  
+  <div class="col-md-4">
+     <a href="saraswati01.html" class="thumbnail">
+    
+      <img src="img/saraswati01.jpg" alt="SARASWATI MANIKA <br /> SANSKRIT VYAKARAN" style="width:150px;height:175px">
+	  <center>SARASWATI MANIKA <br /> SANSKRIT VYAKARAN <br /><del> ₹ 180</del><h4> ₹ 72 (60% OFF)</h4>
+	  </center>
+	  </img>
+    </a>
+  </div>
+     </div>
+  <div class="row">
+  <div class="col-md-4">
+  <a href="gulmohar01.html" class="thumbnail">
+    
+      <img src="img/gulmohar01.jpg" alt="GULMOHAR REAEDER CLASS-8"  style="width:150px;height:175px">
+	  <center>GULMOHAR REAEDER<br /> CLASS-8<br /><del> ₹ 235</del><h4> ₹ 94 (60% OFF)</h4>
+	  </center>
+	  </img>
+    </a>
+  
+  </div>
+  
+  <div>
+  
+  </div>
+</div>
+
+ 
+ 
+ 
+
+ 
+  </div>
+  </div>
+  
+  
+  </div>
+
+  <footer class="container-fluid text-center">
+   <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+    <button type="button" class="btn btn-danger">Subscribe</button> <br />
+	Reach to us at :&nbsp;&nbsp;<img src="img/icons/fb_icon.png" width="32px" height="32px"/> &nbsp;&nbsp;<img src="img/icons/tw_icon.png" width="32px" height="32px"/> &nbsp;&nbsp;<img src="img/icons/in_icon.png" width="32px" height="32px"/>
+  </form>
+</footer>
+
+
+
+</body>
+</html>
